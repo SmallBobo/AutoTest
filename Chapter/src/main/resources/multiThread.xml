@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<suite name="multithread1" parallel="classes" thread-count="4">
+    <test name="test1">
+        <classes name="class1">
+            <class name="com.course.testng.multthread.MultiThreadOnXml"/>
+            <parameter  name="name" value="ZhangSan"/>
+            <parameter  name="age" value="19"/>
+
+            <class name="com.course.testng.ParameterTest"/>
+        </classes>
+
+    </test>
+
+
+</suite>
