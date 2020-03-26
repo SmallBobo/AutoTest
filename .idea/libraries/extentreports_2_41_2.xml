@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="extentreports-2.41.2">
+    <CLASSES>
+      <root url="jar://$APPLICATION_HOME_DIR$/lib/extentreports-2.41.2.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
