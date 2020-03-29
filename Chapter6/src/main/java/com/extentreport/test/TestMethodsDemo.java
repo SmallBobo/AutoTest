@@ -11,9 +11,10 @@ public class TestMethodsDemo {
     public void test1(){
         Assert.assertEquals(1,1);
     }
-
+    @Test
     public void test3(){
         Assert.assertEquals(1,2);
+
     }
 
     //日志

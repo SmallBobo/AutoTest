@@ -1,4 +1,4 @@
-package com.course.testng.timeout;
+package com.course.httpclient.testng.timeout;
 
 import org.testng.annotations.Test;
 

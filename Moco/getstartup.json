@@ -1,0 +1,117 @@
+[
+  {
+    "description": "post请求",
+    "request": {
+      "uri": "/post/with/cookie",
+      "method": "post",
+      "cookies": {
+        "login": "true"
+      },
+      "json": {
+        "name": "ZS"
+      }
+    },
+    "response": {
+      "json": {
+        "code": 1,
+        "name": "ZS",
+        "age": "he said he is 18 years old"
+      }
+    }
+  },
+  {
+    "description": "返回cookie信息的Get请求",
+    "request": {
+      "uri": "/get/response/cookie",
+      "method": "get"
+    },
+    "response": {
+      "headers":{
+        "Content-Type":"text/html;charset=gbk"
+      },
+      "text": "获取cookie成功！",
+      "cookies": {
+        "login": "true"
+      }
+
+    }
+  },
+  {
+    "description": "带cookie请求",
+    "request":{
+      "uri": "/get/with/cookie",
+      "method": "get",
+      "cookies": {
+        "login": "true"
+      }
+    },
+    "response": {
+      "headers": {
+        "Content-Type": "text/html;charset=gbk"
+      },
+      "text": "此为带cookie请求"
+    }
+  },
+  {
+    "description":"get请求",
+    "request":{
+      "uri": "/get/null/param",
+      "method": "get"
+    },
+    "response": {
+      "text": "无参get请求",
+      "headers":{
+        "Content-Type":"text/html;charset=gbk"
+      }
+    }
+  },
+  {
+    "description": "有参get请求",
+    "request": {
+      "uri": "/get/with/param",
+      "method": "get",
+      "queries": {
+        "name": "ZhangSan",
+        "age": "12"
+      }
+
+    },
+    "response": {
+      "text": "有参get请求",
+      "headers":{
+        "Content-Type":"text/html;charset=gbk"
+      }
+    }
+  },
+  {
+    "description": "get重定向",
+    "request": {
+      "uri": "/get/redirectTo",
+      "method": "get"
+    },
+    "redirectTo": "/get/null/param"
+  },
+  {
+    "description": "get携带请求头等信息",
+    "request": {
+      "uri": "/get/with/headerandcookie",
+      "queries": {
+        "name": "ZhangSan",
+        "age": "13"
+      },
+      "headers": {
+        "content-type": "application/json"
+      },
+      "cookies": {
+        "login": "true"
+      }
+    },
+    "response": {
+      "text": "get携带请求头等信息",
+      "headers":{
+        "Content-Type":"text/html;charset=gbk"
+      }
+    }
+  }
+
+]

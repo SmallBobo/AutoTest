@@ -1,4 +1,4 @@
-package com.course.testng;
+package com.course.httpclient.testng;
 
 import org.testng.annotations.Test;
 
